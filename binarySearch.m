@@ -1,6 +1,6 @@
 function binarysearch = binarySearch(a,find)
-%UNTITLED2 此处显示有关此函数的摘要
-%   此处显示详细说明
+% Find whether there is a "find" in the sequeced array "a"
+%   Use binary consistently to reduce computing time
 low=1;
 high=length(a);
 while low<=high

@@ -1,6 +1,8 @@
 function [array,binaryinsert] = binaryInsert(a,find)
-%UNTITLED5 此处显示有关此函数的摘要
-%   此处显示详细说明
+% Insert a "find" in the sequeced array "a".
+%   Use binary consistently to reduce computing time. If there is no "find" 
+%   in the sequence, insert "find" in the proper place, then return true.
+%   Otherwise, return true without edit.
 low=1;
 high=length(a);
 while low<=high
@@ -13,6 +15,7 @@ while low<=high
         high=i-1;
         continue;
     end
+    array=a;
     binaryinsert=false;
     return;
 end
